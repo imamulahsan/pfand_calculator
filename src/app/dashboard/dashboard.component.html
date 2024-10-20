@@ -1,0 +1,21 @@
+<div class="dashboard-header">
+    <img src="assets/images/recycle.png" alt="Recycle" class="header-icon">
+    <h1>Pfand Calculator</h1>
+  </div>
+  
+  <div class="dashboard-container">
+    <!-- Left Column: Webcam Feed -->
+    <div class="left-column">
+      <h2>Webcam Output</h2>
+      <app-webcam></app-webcam>
+    </div>
+  
+    <!-- Right Column: Pfand Calculation -->
+    <div class="right-column">
+      <h2>Pfand Calculation</h2>
+      <div class="calculation-result">
+        <p><i class="pfand-icon">💰</i> Total Pfand: <span class="pfand-value">{{ pfandTotal | currency:'EUR' }}</span></p>
+      </div>
+    </div>
+  </div>
+  
